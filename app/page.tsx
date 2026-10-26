@@ -23,7 +23,6 @@ export default function Home() {
         </div>
         <figure className="editorial-photo hero-editorial">
           <img src="/images/pembukuan-usaha.png" alt="Kalkulator, bukti transaksi, dan buku catatan keuangan di meja kerja" width={1536} height={1024} fetchPriority="high" />
-          <figcaption>Catatan transaksi menjadi dasar pembukuan dan perhitungan pajak.</figcaption>
         </figure>
       </section>
 
