@@ -4,7 +4,7 @@ import { services, whatsappUrl } from "../content";
 
 export const metadata: Metadata = {
   title: "Layanan | byConsultax",
-  description: "Bantuan konsultasi pajak, SPT Tahunan, pajak bulanan, pembukuan, PPN, dan PPh 21. Pilih sesuai kebutuhan Anda dan usaha Anda.",
+  description: "Bantuan konsultasi pajak, SPT Tahunan, pajak bulanan, pembukuan, PPN, dan PPh 21. Untuk kebutuhan orang pribadi dan badan usaha.",
 };
 
 export default function ServicesPage() {
@@ -13,12 +13,12 @@ export default function ServicesPage() {
       <section className="subpage-hero">
         <div>
           <p className="eyebrow">Layanan kami</p>
-          <h1>Bantuan pajak sesuai kebutuhan Anda.</h1>
-          <p>Butuh konsultasi sekali, bantuan lapor SPT, atau pendampingan setiap bulan? Pilih layanan di bawah untuk melihat apa saja yang kami kerjakan.</p>
+          <h1>Layanan pajak dan pembukuan.</h1>
+          <p>Tersedia konsultasi, pelaporan SPT, pembukuan, dan pendampingan bulanan. Setiap layanan mencakup penjelasan pekerjaan, hasil, dan proses pelaksanaannya.</p>
         </div>
       </section>
       <section className="services-section standalone-section">
-        <div className="section-title compact"><p className="eyebrow">Yang bisa kami bantu</p><h2>Dari konsultasi sampai pembukuan.</h2></div>
+        <div className="section-title compact"><p className="eyebrow">Cakupan layanan</p><h2>Dari konsultasi sampai pembukuan.</h2></div>
         <div className="service-card-grid">
           {services.map((service, index) => (
             <Link className="service-card" href={`/services/${service.slug}`} key={service.slug}>
@@ -30,8 +30,8 @@ export default function ServicesPage() {
         </div>
       </section>
       <section className="mini-cta">
-        <div><p className="eyebrow">Masih belum yakin?</p><h2>Kita cari tahu kebutuhannya bersama.</h2></div>
-        <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">Tanya lewat WhatsApp</a>
+        <div><p className="eyebrow">Pemilihan layanan</p><h2>Konsultasikan layanan yang sesuai.</h2></div>
+        <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">Konsultasi via WhatsApp</a>
       </section>
     </main>
   );

@@ -57,7 +57,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           <p>{service.headline}</p>
           <div className="hero-actions">
             <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-              Tanya tentang layanan ini
+              Konsultasi layanan
             </a>
             <Link className="button ghost" href="/services">
               Semua layanan
@@ -69,7 +69,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       <section className="detail-layout">
         <aside className="detail-panel">
           <p className="eyebrow">Cakupan</p>
-          <h2>Yang kami bantu</h2>
+          <h2>Ruang lingkup</h2>
           <ul>
             {service.points.map((point) => (
               <li key={point}>{point}</li>
@@ -80,13 +80,13 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         <div className="detail-main">
           <article>
             <p className="eyebrow">Tentang layanan</p>
-            <h2>Apa yang kami kerjakan?</h2>
+            <h2>Penjelasan layanan</h2>
             <p>{service.copy}</p>
           </article>
 
           <article>
             <p className="eyebrow">Hasil pekerjaan</p>
-            <h2>Yang Anda terima.</h2>
+            <h2>Dokumen dan hasil pekerjaan</h2>
             <div className="detail-list">
               {service.deliverables.map((item) => (
                 <div key={item}>
@@ -99,7 +99,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
           <article>
             <p className="eyebrow">Cara kerja</p>
-            <h2>Begini prosesnya.</h2>
+            <h2>Tahapan pekerjaan</h2>
             <div className="timeline-grid">
               {service.process.map((item, index) => (
                 <div className="workflow-card" key={item}>
@@ -111,7 +111,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </article>
 
           <article>
-            <p className="eyebrow">Untuk siapa</p>
+            <p className="eyebrow">Kebutuhan klien</p>
             <h2>Layanan ini cocok untuk</h2>
             <div className="why-grid">
               {service.suitableFor.map((item) => (
@@ -126,7 +126,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         <div className="section-title split">
           <div>
             <p className="eyebrow">Layanan lainnya</p>
-            <h2>Mungkin Anda juga perlu.</h2>
+            <h2>Layanan terkait</h2>
           </div>
           <Link className="text-link" href="/services">
             Lihat semua
@@ -145,11 +145,11 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
       <section className="mini-cta">
         <div>
-          <p className="eyebrow">Mau mulai?</p>
-          <h2>Ceritakan kebutuhan Anda lewat WhatsApp.</h2>
+          <p className="eyebrow">Konsultasi layanan</p>
+          <h2>Hubungi kami untuk membahas kebutuhan layanan.</h2>
         </div>
         <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-          Chat di WhatsApp
+          Hubungi via WhatsApp
         </a>
       </section>
     </main>

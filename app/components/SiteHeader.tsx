@@ -32,7 +32,7 @@ export function SiteHeader() {
       </nav>
       <div className="header-actions">
         <a className="talk-link" href={whatsappUrl} target="_blank" rel="noreferrer">
-          Tanya Kami
+          Konsultasi
         </a>
         <button
           className="menu-toggle"
@@ -58,7 +58,7 @@ export function SiteHeader() {
           </Link>
         ))}
         <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={closeMenu}>
-          Tanya Kami
+          Konsultasi
         </a>
       </nav>
     </header>

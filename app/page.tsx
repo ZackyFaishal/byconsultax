@@ -10,20 +10,20 @@ export default function Home() {
       <section className="hero" id="home">
         <div className="hero-copy">
           <img className="hero-logo" src={logoPath} alt="byConsultax" width={2172} height={724} />
-          <p className="eyebrow">Konsultan pajak untuk Anda dan usaha Anda</p>
-          <h1>Soal pajak, kita urus bersama.</h1>
+          <p className="eyebrow">Konsultan pajak dan pembukuan</p>
+          <h1>Pendampingan pajak untuk pribadi dan usaha.</h1>
           <p>
-            Dari pertanyaan pertama sampai laporan selesai, kami bantu Anda
-            mengurus pajak pribadi, pajak usaha, dan pembukuan.
+            Layanan konsultasi, perhitungan, dan pelaporan pajak,
+            serta penyusunan pembukuan usaha.
           </p>
           <div className="hero-actions">
-            <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">Tanya lewat WhatsApp</a>
+            <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">Konsultasi via WhatsApp</a>
             <Link className="button ghost" href="/services">Lihat layanan</Link>
           </div>
         </div>
         <figure className="editorial-photo hero-editorial">
           <img src="/images/pembukuan-usaha.png" alt="Kalkulator, bukti transaksi, dan buku catatan keuangan di meja kerja" width={1536} height={1024} fetchPriority="high" />
-          <figcaption>Mulai dari catatan usaha yang Anda punya.</figcaption>
+          <figcaption>Catatan transaksi menjadi dasar pembukuan dan perhitungan pajak.</figcaption>
         </figure>
       </section>
 
@@ -35,8 +35,8 @@ export default function Home() {
 
       <section className="audience-section">
         <div className="section-title compact">
-          <p className="eyebrow">Siapa yang kami bantu</p>
-          <h2>Untuk yang bekerja sendiri, sampai yang punya tim.</h2>
+          <p className="eyebrow">Klien yang kami layani</p>
+          <h2>Orang pribadi, UMKM, dan badan usaha.</h2>
         </div>
         <div className="audience-grid">
           {clientSegments.map((item) => (
@@ -50,13 +50,13 @@ export default function Home() {
 
       <section className="about-section" id="about">
         <div className="section-title split">
-          <div><p className="eyebrow">Tentang byConsultax</p><h2>Ada yang bisa Anda tanya dan ajak diskusi.</h2></div>
-          <Link className="text-link" href="/about-us">Kenalan dengan kami</Link>
+          <div><p className="eyebrow">Tentang byConsultax</p><h2>Konsultasi yang berangkat dari kondisi usaha.</h2></div>
+          <Link className="text-link" href="/about-us">Tentang kami</Link>
         </div>
         <div className="about-grid">
           <div className="about-story">
-            <p>Tidak harus paham istilah pajak untuk mulai konsultasi. Ceritakan saja kondisi Anda, termasuk kalau ada laporan atau dokumen yang belum lengkap.</p>
-            <p>Kami bantu mengecek apa yang perlu diurus, menjelaskan perhitungannya, dan menyiapkan laporan bersama Anda.</p>
+            <p>Setiap usaha memiliki kebutuhan pajak yang berbeda. Kami meninjau kegiatan usaha, riwayat pelaporan, dan dokumen yang tersedia sebelum menentukan layanan.</p>
+            <p>Kewajiban pajak dan perhitungannya dijelaskan secara terbuka. Draf laporan diperiksa bersama klien sebelum diproses lebih lanjut.</p>
           </div>
           <div className="value-grid compact-grid">
             {values.map((item, index) => (
@@ -70,7 +70,7 @@ export default function Home() {
 
       <section className="services-section" id="services">
         <div className="section-title split">
-          <div><p className="eyebrow">Layanan</p><h2>Apa yang sedang Anda butuhkan?</h2></div>
+          <div><p className="eyebrow">Layanan</p><h2>Layanan pajak dan pembukuan.</h2></div>
           <Link className="text-link" href="/services">Semua layanan</Link>
         </div>
         <div className="service-card-grid">
@@ -86,8 +86,8 @@ export default function Home() {
 
       <section className="packages-section">
         <div className="section-title split">
-          <div><p className="eyebrow">Pilihan bantuan</p><h2>Sekali konsultasi atau dibantu setiap bulan.</h2></div>
-          <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Tanyakan paketnya</a>
+          <div><p className="eyebrow">Pilihan layanan</p><h2>Konsultasi terpisah atau pendampingan rutin.</h2></div>
+          <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Informasi paket</a>
         </div>
         <div className="package-grid">
           {packages.map((item) => (
@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       <section className="workflow-section">
-        <div className="section-title compact"><p className="eyebrow">Cara kerja</p><h2>Mulainya dari obrolan singkat.</h2></div>
+        <div className="section-title compact"><p className="eyebrow">Cara kerja</p><h2>Dari konsultasi hingga pelaporan.</h2></div>
         <div className="workflow-strip">
           {workflowSteps.map(([title, copy], index) => (
             <article className="workflow-step" key={title}>
@@ -112,7 +112,7 @@ export default function Home() {
 
       <section className="experts-section" id="experts">
         <div className="section-title split">
-          <div><p className="eyebrow">Tim kami</p><h2>Kenalan dengan tim byConsultax.</h2></div>
+          <div><p className="eyebrow">Tim kami</p><h2>Tim byConsultax.</h2></div>
           <a className="text-link" href={whatsappUrl} target="_blank" rel="noreferrer">Hubungi kami</a>
         </div>
         <div className="expert-grid">
@@ -126,19 +126,19 @@ export default function Home() {
       </section>
 
       <section className="insights-section" id="insight">
-        <div className="section-title compact"><p className="eyebrow">Bahan obrolan</p><h2>Pertanyaan seperti ini juga boleh.</h2></div>
+        <div className="section-title compact"><p className="eyebrow">Topik konsultasi</p><h2>Pembahasan seputar pajak dan pembukuan.</h2></div>
         <div className="insight-grid">
           {insights.map((item) => (
             <article className="insight-card" key={item.title}>
               <span>{item.category}</span><h3>{item.title}</h3>
-              <a href={whatsappUrl} target="_blank" rel="noreferrer">Tanyakan ke kami</a>
+              <a href={whatsappUrl} target="_blank" rel="noreferrer">Konsultasikan topik ini</a>
             </article>
           ))}
         </div>
       </section>
 
       <section className="faq-section">
-        <div className="section-title compact"><p className="eyebrow">Tanya jawab</p><h2>Sebelum mulai.</h2></div>
+        <div className="section-title compact"><p className="eyebrow">Tanya jawab</p><h2>Informasi sebelum menggunakan layanan.</h2></div>
         <div className="faq-grid">
           {faqs.map((item) => (
             <article className="faq-card" key={item.question}><h3>{item.question}</h3><p>{item.answer}</p></article>
@@ -148,8 +148,8 @@ export default function Home() {
 
       <section className="cta-section" id="contact">
         <div>
-          <p className="eyebrow">Hubungi kami</p><h2>Ceritakan dulu kebutuhan Anda.</h2>
-          <p>Belum tahu harus mulai dari mana? Kirim pesan saja. Kami bantu cari tahu layanan yang sesuai.</p>
+          <p className="eyebrow">Hubungi kami</p><h2>Konsultasikan kebutuhan pajak dan pembukuan.</h2>
+          <p>Hubungi byConsultax untuk membahas kondisi pajak, cakupan pekerjaan, dan pilihan layanan.</p>
           <div className="contact-list">
             <a href="mailto:hello@byconsultax.id">hello@byconsultax.id</a>
             <a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp: +62 857-0326-4750</a>
@@ -157,9 +157,9 @@ export default function Home() {
           </div>
         </div>
         <div className="contact-start">
-          <h3>Mau bahas apa?</h3>
-          <p>Cukup sampaikan jenis usaha atau pekerjaan Anda dan pertanyaan yang ingin dibahas. Dokumen bisa menyusul setelah kita tahu kebutuhannya.</p>
-          <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">Mulai chat di WhatsApp</a>
+          <h3>Konsultasi awal</h3>
+          <p>Sampaikan jenis usaha atau pekerjaan serta kebutuhan yang ingin dibahas. Daftar dokumen akan diinformasikan setelah konsultasi awal.</p>
+          <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">Hubungi via WhatsApp</a>
         </div>
       </section>
     </main>
