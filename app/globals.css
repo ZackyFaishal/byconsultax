@@ -71,7 +71,7 @@ textarea {
 }
 
 .brand img {
-  width: 190px;
+  width: 210px;
   height: 70px;
   object-fit: contain;
   object-position: left center;
@@ -184,8 +184,8 @@ textarea {
 
 .hero-logo {
   display: block;
-  width: min(300px, 82vw);
-  height: 122px;
+  width: min(330px, 82vw);
+  height: auto;
   margin: 0 0 24px;
   object-fit: contain;
   object-position: left center;
@@ -1888,7 +1888,7 @@ h3 {
 
   .hero-logo {
     width: min(240px, 76vw);
-    height: 98px;
+    height: auto;
     margin-bottom: 18px;
   }
 
@@ -2295,7 +2295,7 @@ h3 {
 
   .hero-logo {
     width: 210px;
-    height: 86px;
+    height: auto;
   }
 
   .hero-copy p:not(.eyebrow) {

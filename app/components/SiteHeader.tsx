@@ -21,7 +21,7 @@ export function SiteHeader() {
   return (
     <header className={`site-header ${isOpen ? "menu-open" : ""}`}>
       <Link className="brand" href="/" aria-label="byConsultax Home">
-        <img src={logoPath} alt={companyName} />
+        <img src={logoPath} alt={companyName} width={2172} height={724} />
       </Link>
       <nav className="nav-links" aria-label="Navigasi utama">
         {navItems.map(([label, href]) => (

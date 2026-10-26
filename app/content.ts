@@ -1,5 +1,5 @@
 export const companyName = "byConsultax";
-export const logoPath = "/logo-byconsultax-transparent.png";
+export const logoPath = "/logo-byconsultax-v2.png";
 
 export const whatsappNumber = "6285703264750";
 export const whatsappMessage =

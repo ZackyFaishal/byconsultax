@@ -5,6 +5,7 @@ import {
   faqs,
   highlights,
   insights,
+  logoPath,
   packages,
   professionalImages,
   services,
@@ -20,7 +21,7 @@ export default function Home() {
     <main>
       <section className="hero" id="home">
         <div className="hero-copy">
-          <img className="hero-logo" src="/logo-byconsultax-transparent.png" alt="byConsultax" />
+          <img className="hero-logo" src={logoPath} alt="byConsultax" width={2172} height={724} />
           <p className="eyebrow">Konsultan pajak yang jadi teman bisnis</p>
           <h1>byConsultax bantu pajak bisnis lebih rapi, ringan, dan terarah.</h1>
           <p>

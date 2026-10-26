@@ -5,7 +5,7 @@ export function SiteFooter() {
   return (
     <footer className="footer">
       <div>
-        <img className="footer-logo" src={logoPath} alt={companyName} />
+        <img className="footer-logo" src={logoPath} alt={companyName} width={2172} height={724} />
         <p>
           Konsultan pajak yang membantu UMKM, orang pribadi, freelancer, CV,
           dan PT merapikan pelaporan, pembukuan, payroll, PPN, dan tax planning.
