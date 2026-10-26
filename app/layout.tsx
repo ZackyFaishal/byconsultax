@@ -7,7 +7,7 @@ import { WhatsAppBubble } from "./components/WhatsAppBubble";
 export const metadata: Metadata = {
   title: "byConsultax | Konsultan Pajak",
   description:
-    "byConsultax membantu UMKM, orang pribadi, freelancer, CV, dan PT mengelola konsultasi pajak, tax planning, SPT Tahunan, pendampingan pajak bulanan, pembukuan, PPN, PKP, dan PPh 21.",
+    "Butuh bantuan pajak pribadi atau usaha? byConsultax membantu konsultasi, pelaporan SPT, pajak bulanan, dan pembukuan. Ceritakan kebutuhan Anda kepada kami.",
 };
 
 export default function RootLayout({

@@ -7,17 +7,17 @@ export function SiteFooter() {
       <div>
         <img className="footer-logo" src={logoPath} alt={companyName} width={2172} height={724} />
         <p>
-          Konsultan pajak yang membantu UMKM, orang pribadi, freelancer, CV,
-          dan PT merapikan pelaporan, pembukuan, payroll, PPN, dan tax planning.
+          Bantuan pajak pribadi, pajak usaha, dan pembukuan.
+          Mulai dari konsultasi sampai laporan selesai.
         </p>
       </div>
       <div className="footer-links">
-        <Link href="/">Home</Link>
-        <Link href="/about-us">About Us</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/#experts">Experts</Link>
-        <Link href="/#insight">Insight</Link>
-        <Link href="/#contact">Contact</Link>
+        <Link href="/">Beranda</Link>
+        <Link href="/about-us">Tentang Kami</Link>
+        <Link href="/services">Layanan</Link>
+        <Link href="/#experts">Tim</Link>
+        <Link href="/#insight">Tanya Jawab</Link>
+        <Link href="/#contact">Kontak</Link>
       </div>
     </footer>
   );

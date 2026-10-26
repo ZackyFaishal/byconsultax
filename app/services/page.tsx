@@ -3,9 +3,8 @@ import Link from "next/link";
 import { services, whatsappUrl } from "../content";
 
 export const metadata: Metadata = {
-  title: "Services | byConsultax",
-  description:
-    "Daftar layanan byConsultax untuk konsultasi pajak, tax planning, SPT Tahunan, pendampingan pajak bulanan, pembukuan, PPN, PKP, payroll, dan PPh 21.",
+  title: "Layanan | byConsultax",
+  description: "Bantuan konsultasi pajak, SPT Tahunan, pajak bulanan, pembukuan, PPN, dan PPh 21. Pilih sesuai kebutuhan Anda dan usaha Anda.",
 };
 
 export default function ServicesPage() {
@@ -13,49 +12,26 @@ export default function ServicesPage() {
     <main>
       <section className="subpage-hero">
         <div>
-          <p className="eyebrow">Our services</p>
-          <h1>Layanan pajak dan bisnis dengan halaman detail yang jelas.</h1>
-          <p>
-            Pilih layanan yang sesuai dengan kebutuhan perusahaan Anda. Setiap
-            halaman berisi ruang lingkup, deliverables, proses kerja, dan tipe
-            klien yang paling cocok.
-          </p>
+          <p className="eyebrow">Layanan kami</p>
+          <h1>Bantuan pajak sesuai kebutuhan Anda.</h1>
+          <p>Butuh konsultasi sekali, bantuan lapor SPT, atau pendampingan setiap bulan? Pilih layanan di bawah untuk melihat apa saja yang kami kerjakan.</p>
         </div>
       </section>
-
       <section className="services-section standalone-section">
-        <div className="section-title compact">
-          <p className="eyebrow">Layanan kami</p>
-          <h2>Bukan hanya daftar layanan, setiap layanan punya detail sendiri.</h2>
-        </div>
+        <div className="section-title compact"><p className="eyebrow">Yang bisa kami bantu</p><h2>Dari konsultasi sampai pembukuan.</h2></div>
         <div className="service-card-grid">
           {services.map((service, index) => (
-            <Link className="service-card" href={`/services/${service.slug}`} key={service.title}>
-              <div className="service-image">
-                <img src={service.image} alt={service.title} />
-              </div>
-              <strong>{String(index + 1).padStart(2, "0")}</strong>
-              <h3>{service.title}</h3>
-              <p>{service.copy}</p>
-              <ul>
-                {service.points.map((point) => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-              <span className="card-link">Buka detail layanan</span>
+            <Link className="service-card" href={`/services/${service.slug}`} key={service.slug}>
+              <strong>{String(index + 1).padStart(2, "0")}</strong><h3>{service.title}</h3><p>{service.copy}</p>
+              <ul>{service.points.map((point) => <li key={point}>{point}</li>)}</ul>
+              <span className="card-link">Tentang layanan ini</span>
             </Link>
           ))}
         </div>
       </section>
-
       <section className="mini-cta">
-        <div>
-          <p className="eyebrow">Need guidance?</p>
-          <h2>Belum yakin layanan mana yang paling tepat?</h2>
-        </div>
-        <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-          Tanya Admin byConsultax
-        </a>
+        <div><p className="eyebrow">Masih belum yakin?</p><h2>Kita cari tahu kebutuhannya bersama.</h2></div>
+        <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">Tanya lewat WhatsApp</a>
       </section>
     </main>
   );

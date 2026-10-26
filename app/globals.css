@@ -182,6 +182,43 @@ textarea {
   animation: riseIn 720ms ease both;
 }
 
+.editorial-photo {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: white;
+}
+
+.editorial-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.editorial-photo figcaption {
+  padding: 18px 22px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hero-editorial {
+  box-shadow: var(--shadow);
+}
+
+.about-values {
+  margin-top: 42px;
+}
+
+.about-story h2 {
+  color: white;
+  font-size: clamp(26px, 3vw, 36px);
+}
+
 .hero-logo {
   display: block;
   width: min(330px, 82vw);
@@ -1243,9 +1280,25 @@ h3 {
   gap: 54px;
   align-items: flex-start;
   color: white;
-  background:
-    linear-gradient(135deg, rgba(7, 31, 63, 0.97), rgba(14, 49, 95, 0.9)),
-    url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1400&q=80") center/cover;
+  background: #0e315f;
+}
+
+.contact-start {
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-start h3 {
+  margin-top: 0;
+  color: white;
+  font-size: 26px;
+}
+
+.contact-start .button {
+  margin-top: 12px;
 }
 
 .contact-list {
@@ -1370,6 +1423,10 @@ h3 {
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
   gap: 54px;
   align-items: center;
+}
+
+.detail-hero.detail-hero-text {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .subpage-hero div,
@@ -1833,6 +1890,14 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .editorial-photo figcaption {
+    padding: 14px 18px;
+  }
+
   .site-header {
     min-height: 72px;
     gap: 10px;

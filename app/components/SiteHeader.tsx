@@ -5,12 +5,12 @@ import { useState } from "react";
 import { companyName, logoPath, whatsappUrl } from "../content";
 
 const navItems = [
-  ["Home", "/"],
-  ["About Us", "/about-us"],
-  ["Services", "/services"],
-  ["Experts", "/#experts"],
-  ["Insight", "/#insight"],
-  ["Contact", "/#contact"],
+  ["Beranda", "/"],
+  ["Tentang Kami", "/about-us"],
+  ["Layanan", "/services"],
+  ["Tim", "/#experts"],
+  ["Tanya Jawab", "/#insight"],
+  ["Kontak", "/#contact"],
 ];
 
 export function SiteHeader() {
@@ -20,7 +20,7 @@ export function SiteHeader() {
 
   return (
     <header className={`site-header ${isOpen ? "menu-open" : ""}`}>
-      <Link className="brand" href="/" aria-label="byConsultax Home">
+      <Link className="brand" href="/" aria-label="Beranda byConsultax">
         <img src={logoPath} alt={companyName} width={2172} height={724} />
       </Link>
       <nav className="nav-links" aria-label="Navigasi utama">
@@ -32,7 +32,7 @@ export function SiteHeader() {
       </nav>
       <div className="header-actions">
         <a className="talk-link" href={whatsappUrl} target="_blank" rel="noreferrer">
-          Konsultasi Gratis
+          Tanya Kami
         </a>
         <button
           className="menu-toggle"
@@ -58,7 +58,7 @@ export function SiteHeader() {
           </Link>
         ))}
         <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={closeMenu}>
-          Konsultasi Gratis
+          Tanya Kami
         </a>
       </nav>
     </header>

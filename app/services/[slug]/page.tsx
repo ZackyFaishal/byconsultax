@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
 
   if (!service) {
     return {
-      title: "Service Not Found | byConsultax",
+      title: "Layanan Tidak Ditemukan | byConsultax",
     };
   }
 
@@ -45,34 +45,31 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
   return (
     <main>
-      <section className="detail-hero">
+      <section className="detail-hero detail-hero-text">
         <div>
           <div className="breadcrumb">
-            <Link href="/">Home</Link>
+            <Link href="/">Beranda</Link>
             <span>/</span>
-            <Link href="/services">Services</Link>
+            <Link href="/services">Layanan</Link>
           </div>
-          <p className="eyebrow">byConsultax Service</p>
+          <p className="eyebrow">Layanan byConsultax</p>
           <h1>{service.title}</h1>
           <p>{service.headline}</p>
           <div className="hero-actions">
             <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-              Konsultasi layanan ini
+              Tanya tentang layanan ini
             </a>
             <Link className="button ghost" href="/services">
               Semua layanan
             </Link>
           </div>
         </div>
-        <div className="detail-hero-image">
-          <img src={service.image} alt={service.title} />
-        </div>
       </section>
 
       <section className="detail-layout">
         <aside className="detail-panel">
-          <p className="eyebrow">Scope</p>
-          <h2>Area layanan</h2>
+          <p className="eyebrow">Cakupan</p>
+          <h2>Yang kami bantu</h2>
           <ul>
             {service.points.map((point) => (
               <li key={point}>{point}</li>
@@ -82,14 +79,14 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
         <div className="detail-main">
           <article>
-            <p className="eyebrow">Overview</p>
-            <h2>{service.headline}</h2>
+            <p className="eyebrow">Tentang layanan</p>
+            <h2>Apa yang kami kerjakan?</h2>
             <p>{service.copy}</p>
           </article>
 
           <article>
-            <p className="eyebrow">Deliverables</p>
-            <h2>Apa saja yang akan Anda dapatkan?</h2>
+            <p className="eyebrow">Hasil pekerjaan</p>
+            <h2>Yang Anda terima.</h2>
             <div className="detail-list">
               {service.deliverables.map((item) => (
                 <div key={item}>
@@ -101,8 +98,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </article>
 
           <article>
-            <p className="eyebrow">Process</p>
-            <h2>Alur kerja layanan</h2>
+            <p className="eyebrow">Cara kerja</p>
+            <h2>Begini prosesnya.</h2>
             <div className="timeline-grid">
               {service.process.map((item, index) => (
                 <div className="workflow-card" key={item}>
@@ -114,7 +111,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </article>
 
           <article>
-            <p className="eyebrow">Best for</p>
+            <p className="eyebrow">Untuk siapa</p>
             <h2>Layanan ini cocok untuk</h2>
             <div className="why-grid">
               {service.suitableFor.map((item) => (
@@ -128,8 +125,8 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       <section className="related-section">
         <div className="section-title split">
           <div>
-            <p className="eyebrow">Other services</p>
-            <h2>Layanan byConsultax lainnya</h2>
+            <p className="eyebrow">Layanan lainnya</p>
+            <h2>Mungkin Anda juga perlu.</h2>
           </div>
           <Link className="text-link" href="/services">
             Lihat semua
@@ -138,9 +135,6 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
         <div className="related-grid">
           {relatedServices.map((item) => (
             <Link className="service-card" href={`/services/${item.slug}`} key={item.slug}>
-              <div className="service-image">
-                <img src={item.image} alt={item.title} />
-              </div>
               <h3>{item.title}</h3>
               <p>{item.copy}</p>
               <span className="card-link">Lihat detail</span>
@@ -151,11 +145,11 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
 
       <section className="mini-cta">
         <div>
-          <p className="eyebrow">Start now</p>
-          <h2>Mulai dari konsultasi singkat dengan admin byConsultax.</h2>
+          <p className="eyebrow">Mau mulai?</p>
+          <h2>Ceritakan kebutuhan Anda lewat WhatsApp.</h2>
         </div>
         <a className="button primary" href={whatsappUrl} target="_blank" rel="noreferrer">
-          Chat WhatsApp
+          Chat di WhatsApp
         </a>
       </section>
     </main>
